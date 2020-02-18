@@ -20,7 +20,7 @@ namespace POS_And_Inventory_System
         {
             InitializeComponent();
             cn = new SqlConnection(dBCon.MyConnection());
-            cn.Open();
+            //cn.Open();
             MessageBox.Show("Connected!");
 
         }

@@ -18,6 +18,7 @@ namespace POS_And_Inventory_System
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             //Application.Run(new frmBrandList());
+            //Application.Run(new frmBrand());
         }
     }
 }

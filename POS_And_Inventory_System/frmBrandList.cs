@@ -31,5 +31,11 @@ namespace POS_And_Inventory_System
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            frmBrand frm = new frmBrand();
+            frm.ShowDialog();
+        }
     }
 }
