@@ -35,5 +35,14 @@ namespace POS_And_Inventory_System
 
 
         }
+
+        private void btnBrand_Click(object sender, EventArgs e)
+        {
+            frmBrandList frm = new frmBrandList();
+            frm.TopLevel = false;
+            panel4.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
     }
 }
