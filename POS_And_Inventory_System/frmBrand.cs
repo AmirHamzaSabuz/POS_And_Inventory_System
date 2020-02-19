@@ -16,11 +16,12 @@ namespace POS_And_Inventory_System
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dBCon = new DBConnection();
-
-        public frmBrand()
+        frmBrandList frmList;
+        public frmBrand(frmBrandList fList)
         {
             InitializeComponent();
             cn = new SqlConnection(dBCon.MyConnection());
+            frmList = fList;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -51,12 +52,18 @@ namespace POS_And_Inventory_System
                     cn.Close();
                     MessageBox.Show("Record has been successfully saved");
                     Clear();
+                    frmList.LoadRecords();
                 }
                
             }
             catch(Exception ex) {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

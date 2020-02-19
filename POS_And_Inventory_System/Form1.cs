@@ -44,5 +44,10 @@ namespace POS_And_Inventory_System
             frm.BringToFront();
             frm.Show();
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
